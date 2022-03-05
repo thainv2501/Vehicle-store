@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Vehicle Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+            />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    </head>
+    <body>
+        <!-- navbar dung chung -->
+     
+  <header>
+      <nav class="navbar bg-dark navbar-dark text-light">
+        <a href="index.html"> <img class="logo" src="img/onlinelogomaker-011922-2055-7830.png" alt="" /></a>
+        <div class="option-link d-flex">
+          <div class="dropdown mx-2">
+            <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Vehicle
+            </a>
+            <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item " href="">Car</a></li>
+                    <li><a class="dropdown-item " href="">Moto</a></li>
+
+            </ul>
+          </div>
+          <div class="dropdown mx-2">
+            <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          
+         
+            <a class="btn mx-2 btn-dark link-light" href="brandList">Brand</a>
+
+        </div>
+        
+        <button type="button" class="btn btn-dark m-2"> <a href="shoppingCart"><i class="bi bi-cart3 text-white"></i></a> 7 </button>
+        
+
+        <div class="navlink login logout">
+          <a class="nav-link link-light " href="login">Login</a>
+          <a class="nav-link link-light " href="register">Sign Up</a>
+          <a class="nav-link link-light " href="logout">Sign Out</a>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+            <!-- class container chua tat ca cac phan chinh -->
+            <div class="container">
+                <!-- silde show container -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img class="slideImg" src="img/sieu-xe-la-gi-muaxegiatot-vn.jpg" alt="" />
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img class="slideImg" src="img/download.png" alt="" />
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img class="slideImg" src="img/Ferrari-Logo-Font-1-e1630937810238.jpg" alt="" />
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                <!-- end slide show container -->
+                <!-- brand --> 
+                <!-- dang can sua them -->
+                <div class=" bg-light text-dark">
+                    <h3 class="text-center pt-4">Brand</h3>
+                    <br>
+                    <div class="p-5">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3 ">
+
+                                <div class="box rounded brand bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <div class="card-img">
+                                        <img class="rounded product-img" src="img/Ferrari-Logo-Font-1-e1630937810238.jpg" alt="">
+                                    </div>
+                                    <h2 class="text-center mt-auto">Ferrari</h2>             
+                                    <div class="mt-auto text-end">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">See more >></a></button>
+
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-6 col-md-3 ">
+
+                                <div class="box rounded brand bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <div class="card-img">
+                                        <img class="rounded product-img" src="img/Ferrari-Logo-Font-1-e1630937810238.jpg" alt="">
+                                    </div>
+                                    <h2 class="text-center mt-auto">Ferrari</h2>             
+                                    <div class="mt-auto text-end">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">See more >></a></button>
+
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-6 col-md-3 ">
+
+                                <div class="box rounded brand bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <div class="card-img">
+                                        <img class="rounded product-img" src="img/Ferrari-Logo-Font-1-e1630937810238.jpg" alt="">
+                                    </div>
+                                    <h2 class="text-center mt-auto">Ferrari</h2>             
+                                    <div class="mt-auto text-end">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">See more >></a></button>
+
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-6 col-md-3 ">
+
+                                <div class="box rounded brand bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <div class="card-img">
+                                        <img class="rounded product-img" src="img/Ferrari-Logo-Font-1-e1630937810238.jpg" alt="">
+                                    </div>
+                                    <h2 class="text-center mt-auto">Ferrari</h2>             
+                                    <div class="mt-auto text-end">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">See more >></a></button>
+
+                                    </div>
+
+                                </div>
+                                </div>
+
+
+
+                    </div>
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-secondary m-3"> <a href="#"></a>See more >></i></button>
+
+                </div>
+            </div>
+            <!-- start newest oto product -->
+            <div class="newest-car-product bg-dark text-light">
+                <h3 class="bg-secondery text-center pt-4">Newest Car Product</h3>
+                <br>
+                <div class="p-5">
+                    <div class="row gy-5">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/sieu-xe-la-gi-muaxegiatot-vn.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Ferrari</h2>
+                                        <h2 class="product-price"> 120 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> China</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 1979</p>
+
+                                    </section>
+
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/sieu-xe-la-gi-muaxegiatot-vn.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Ferrari</h2>
+                                        <h2 class="product-price"> 120 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> China</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 1979</p>
+
+                                    </section>
+
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/sieu-xe-la-gi-muaxegiatot-vn.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Ferrari</h2>
+                                        <h2 class="product-price"> 120 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> China</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 1979</p>
+
+                                    </section>
+
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/sieu-xe-la-gi-muaxegiatot-vn.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Ferrari</h2>
+                                        <h2 class="product-price"> 120 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> China</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 1979</p>
+
+                                    </section>
+
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn" > <a class="btn btn-outline-secondary  m-3" href="productList?vtid=1">See more >></a></button>
+
+                </div>
+            </div>
+            <!-- end newest Car product -->
+            <div class="newest-car-product bg-dark text-light">
+                <h3 class="bg-secondery text-center pt-4">Newest Moto Product</h3>
+                <br>
+                <div class="p-5">
+                    <div class="row gy-5">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/BMW-G310RR-MotoSaigon.vn-2.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Sport Moto</h2>
+                                        <h2 class="product-price"> 42 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> America</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 2022</p>
+
+                                    </section>
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary  " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/BMW-G310RR-MotoSaigon.vn-2.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Sport Moto</h2>
+                                        <h2 class="product-price"> 42 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> America</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 2022</p>
+
+                                    </section>
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary  " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/BMW-G310RR-MotoSaigon.vn-2.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Sport Moto</h2>
+                                        <h2 class="product-price"> 42 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> America</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 2022</p>
+
+                                    </section>
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary  " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/BMW-G310RR-MotoSaigon.vn-2.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Sport Moto</h2>
+                                        <h2 class="product-price"> 42 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> America</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 2022</p>
+
+                                    </section>
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary  " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/BMW-G310RR-MotoSaigon.vn-2.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Sport Moto</h2>
+                                        <h2 class="product-price"> 42 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> America</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 2022</p>
+
+                                    </section>
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary  " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="box rounded product bg-dark d-flex flex-column text-light p-4 h-100">
+                                    <section class="card-img">
+                                        <section class="text-end"><span class="vehicle__badge vehicle__badge--special">Special Value</span></section>
+
+                                        <img class="product-img" src="img/BMW-G310RR-MotoSaigon.vn-2.jpg" alt="">
+                                    </section>             
+                                    <section class="vehicle-header">
+                                        <h2 class="product-tiltle">Sport Moto</h2>
+                                        <h2 class="product-price"> 42 000 $</h3>
+
+                                    </section>
+                                    <section>
+                                        <p class=""><i class="bi bi-geo-alt-fill"></i> America</p>
+                                        <p class=""><i class="bi bi-calendar"></i> 2022</p>
+
+                                    </section>
+                                    <div class="mt-auto">
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary " href="">Detail</a></button>
+                                        <button type="button" class="btn" > <a class="btn btn-outline-secondary  " ><i class="bi bi-cart-plus-fill"></i></a></button>
+                                    </div>
+
+                                </div>
+                                </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn" > <a class="btn btn-outline-secondary  m-3" href="productList?vtid=2">See more >></a></button>
+
+                </div>
+            </div>
+            <!-- end newest Moto product -->
+
+        </div>
+        <!-- end container part -->
+        <!-- footer  -->
+        <footer class="bg-dark text-light">
+            <div class="tiltle information">
+                <h3  >More information</h3>
+                <button type="button" class="btn btn-outline-secondary"> <a href="#"></a> <i class="bi bi-instagram"></i></button>
+                <button type="button" class="btn btn-outline-success"> <a href="#"></a> <i class="bi bi-instagram"></i></button>
+                <button type="button" class="btn btn-outline-success"> <a href="#"></a> <i class="bi bi-instagram"></i></button>
+                <br>
+            </div>
+            <div class="tiltle address">
+                <h3  >Address</h3>
+                <p>SWP301-SE1511-JS</p>
+
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- script link -->
+        <script src="js/slideJs.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
